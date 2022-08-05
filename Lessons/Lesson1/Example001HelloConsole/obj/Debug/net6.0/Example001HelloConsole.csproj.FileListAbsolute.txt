@@ -1,0 +1,15 @@
+C:\Users\anuor\OneDrive\Рабочий стол\С#\Lessons\Lesson1\Example001HelloConsole\bin\Debug\net6.0\Example001HelloConsole.exe
+C:\Users\anuor\OneDrive\Рабочий стол\С#\Lessons\Lesson1\Example001HelloConsole\bin\Debug\net6.0\Example001HelloConsole.deps.json
+C:\Users\anuor\OneDrive\Рабочий стол\С#\Lessons\Lesson1\Example001HelloConsole\bin\Debug\net6.0\Example001HelloConsole.runtimeconfig.json
+C:\Users\anuor\OneDrive\Рабочий стол\С#\Lessons\Lesson1\Example001HelloConsole\bin\Debug\net6.0\Example001HelloConsole.dll
+C:\Users\anuor\OneDrive\Рабочий стол\С#\Lessons\Lesson1\Example001HelloConsole\bin\Debug\net6.0\Example001HelloConsole.pdb
+C:\Users\anuor\OneDrive\Рабочий стол\С#\Lessons\Lesson1\Example001HelloConsole\obj\Debug\net6.0\Example001HelloConsole.csproj.AssemblyReference.cache
+C:\Users\anuor\OneDrive\Рабочий стол\С#\Lessons\Lesson1\Example001HelloConsole\obj\Debug\net6.0\Example001HelloConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anuor\OneDrive\Рабочий стол\С#\Lessons\Lesson1\Example001HelloConsole\obj\Debug\net6.0\Example001HelloConsole.AssemblyInfoInputs.cache
+C:\Users\anuor\OneDrive\Рабочий стол\С#\Lessons\Lesson1\Example001HelloConsole\obj\Debug\net6.0\Example001HelloConsole.AssemblyInfo.cs
+C:\Users\anuor\OneDrive\Рабочий стол\С#\Lessons\Lesson1\Example001HelloConsole\obj\Debug\net6.0\Example001HelloConsole.csproj.CoreCompileInputs.cache
+C:\Users\anuor\OneDrive\Рабочий стол\С#\Lessons\Lesson1\Example001HelloConsole\obj\Debug\net6.0\Example001HelloConsole.dll
+C:\Users\anuor\OneDrive\Рабочий стол\С#\Lessons\Lesson1\Example001HelloConsole\obj\Debug\net6.0\refint\Example001HelloConsole.dll
+C:\Users\anuor\OneDrive\Рабочий стол\С#\Lessons\Lesson1\Example001HelloConsole\obj\Debug\net6.0\Example001HelloConsole.pdb
+C:\Users\anuor\OneDrive\Рабочий стол\С#\Lessons\Lesson1\Example001HelloConsole\obj\Debug\net6.0\Example001HelloConsole.genruntimeconfig.cache
+C:\Users\anuor\OneDrive\Рабочий стол\С#\Lessons\Lesson1\Example001HelloConsole\obj\Debug\net6.0\ref\Example001HelloConsole.dll
