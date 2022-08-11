@@ -18,8 +18,8 @@ Console.WriteLine($"Two digit from number {customNumber} is {secondDigit}.");
 */
 
 
-/*
 
+/*
 // 2. Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
 // Программа будет корректно работать только для чисел от -1 000 000 до 1 000 000. Для иных чисел в принципе работать не будет.
@@ -70,6 +70,30 @@ void SelectionThirdDigit(int number)
 }
 Console.Write("Input integer number (from -1000000 to 1000000): ");
 int customNumber = Convert.ToInt32(Console.ReadLine());
+SelectionThirdDigit(customNumber);
+
+*/
+
+/*
+// Второй вариант решения задачи 2 (задача 13).
+void SelectionThirdDigit(int number)
+{
+     if (number < 100)
+        Console.WriteLine("Custome's numder doesn't contain a third digit.");
+     if (number > 99)
+          {
+            int digit3 = number % 10;
+            Console.WriteLine($"Third digit is {digit3}");
+          }
+}
+Console.Write("Input integer number: ");
+int customNumber = Convert.ToInt32(Console.ReadLine());
+if (customNumber < 0)
+     customNumber = customNumber * -1;
+while (customNumber > 1000)
+     {      
+          customNumber = customNumber / 10;
+     }
 SelectionThirdDigit(customNumber);
 
 */
