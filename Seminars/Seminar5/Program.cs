@@ -111,6 +111,7 @@ if (result == true) Console.WriteLine ($"Custome massive has desired number {des
 else Console.WriteLine ($"Custome massive has not desired number {desiredNumber}.");
 */
 
+/*
 // 4. Задайте одномерный массив из 12-ти случайных чисел. Найдите кол-во эл-тов массива, значение которых лежит в отрезке [10, 99].
 int[] CreateRandomArray(int size, int minValue, int maxValue)
 {
@@ -149,3 +150,38 @@ int maxValue  = Convert.ToInt32(Console.ReadLine());
 int qtElements = QtElements(myArray, minValue, maxValue);
 ShowArray(myArray);
 Console.Write($"Custome array has {qtElements} elements with number from {minValue} to {maxValue}");
+*/
+
+// 5. Найдите произведение пар чисел в одномерном массиве. Парой считается первый и последний эл-ты массива. Результат дайте в новом массиве.
+
+int[] CreateRandomArray(int size, int minValue, int maxValue)
+{
+    int [] newArray = new int[size];
+    for (int i = 0; i < size; i++)
+        newArray[i] = new Random().Next(minValue, maxValue + 1);
+    return newArray;
+}
+void ShowArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+    Console.WriteLine();
+}
+int[]Composition (int[]array)
+{
+    int [] newArray = new int[array.Length/2];
+    for (int i = 0; i < array.Length / 2; i++)
+    {
+        newArray[i] = array[i] * array[array.Length - 1 - i];
+    }
+    return newArray;
+}
+Console.Write("Input size for array: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input min possible value of element: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input max possible value of element: ");
+int max = Convert.ToInt32(Console.ReadLine());
+int[] myArray = CreateRandomArray (a, min, max);
+ShowArray(myArray);
+ShowArray(Composition (myArray));
