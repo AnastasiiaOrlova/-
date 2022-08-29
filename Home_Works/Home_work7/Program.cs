@@ -8,7 +8,7 @@ double [,] CreateRandom2dArray (int rows, int columns, int minValue, int maxValu
     {
         for (int j = 0; j < columns; j++)
         {
-            newArray[i,j] = Convert.ToDouble(new Random().Next(minValue, maxValue + 1)) + new Random().NextDouble(); 
+            newArray[i,j] = Math.Round(Convert.ToDouble(new Random().Next(minValue, maxValue + 1)) + new Random().NextDouble(), 2); 
         }
     }
     return newArray;
@@ -94,18 +94,12 @@ if (rowUser <= myArray.GetLength(0) && columnUser <= myArray.GetLength(1))
         SearchElements (rowUser, columnUser, myArray);
     }
 else Console.WriteLine($"The array have not element with index {rowUser} and {columnUser}.");
-
 */
 
 
-/*
-Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
-Например, задан массив:
-1 4 7 2
-5 9 2 3
-8 4 2 4
-Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
-*/
+
+// Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+
 int [,] CreateRandom2dArray (int rows, int columns, int minValue, int maxValue)
 {
     int [,] newArray = new int [rows, columns];
@@ -137,20 +131,17 @@ void ShowArray(double[] array)
 }
 double [] Average (int [,] array)
 {
-    int size = array.GetLength(1);
-    double [] newArray = new double [size];
-    int sum = 0;
+    double [] newArray = new double [array.GetLength(1)];
     double average = 0;
-    int number = 0;
+    double sum = 0;
     for (int j = 0; j < array.GetLength(1); j++) 
     {
         for (int i = 0; i < array.GetLength(0); i++)
         {
             sum = sum + array[i,j];
         }
-        average = sum / size;  
-        newArray[number] = average;
-        number ++;
+        average = Math.Round(sum / array.GetLength(0), 2);  
+        newArray[j] = average;
     }
     return newArray;
 }
@@ -164,7 +155,8 @@ Console.Write("Input max possible value of element: ");
 int max = Convert.ToInt32(Console.ReadLine());
 int[,] myArray = CreateRandom2dArray (r, c, min, max);
 Show2dArray(myArray);
-Console.WriteLine(" ");
+Console.WriteLine("The averages of each column are:");
 double[] result = Average(myArray);
 ShowArray (result);
+
 
